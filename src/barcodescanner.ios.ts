@@ -430,7 +430,7 @@ const getBarcodeTypes = (formatsString: string): Array<string> => {
   return types;
 };
 
-@NativeClass
+@NativeClass()
 class QRCodeReaderDelegateImpl extends NSObject implements QRCodeReaderDelegate {
   public static ObjCProtocols = [QRCodeReaderDelegate];
 
