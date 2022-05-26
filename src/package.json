@@ -1,6 +1,6 @@
 {
   "name": "nativescript-barcodescanner",
-  "version": "4.1.8",
+  "version": "4.1.9",
   "description": "Scan QR/barcodes with your NativeScript app.",
   "main": "barcodescanner",
   "typings": "index.d.ts",
@@ -23,6 +23,12 @@
     "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link",
     "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/typings/**'"
   },
+  "nativescript": {
+    "platforms": {
+      "ios": "3.4.0",
+      "android": "3.4.0"
+    }
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eddyverbruggen/nativescript-barcodescanner.git"
