@@ -430,7 +430,7 @@ const getBarcodeTypes = (formatsString: string): Array<string> => {
   return types;
 };
 
-@NativeClass
+//@NativeClass()
 class QRCodeReaderDelegateImpl extends NSObject implements QRCodeReaderDelegate {
   public static ObjCProtocols = [QRCodeReaderDelegate];
 
@@ -509,7 +509,7 @@ class QRCodeReaderDelegateImpl extends NSObject implements QRCodeReaderDelegate 
   }
 }
 
-@NativeClass()
+//@NativeClass()
 class VolumeObserverClass extends NSObject {
   observeValueForKeyPathOfObjectChangeContext(path: string, obj: Object, change: NSDictionary<any, any>, context: any) {
     if (path === "outputVolume") {
